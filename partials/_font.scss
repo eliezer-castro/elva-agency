@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap');
+
+$font: 'Epilogue', sans-serif;
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+
+
+
+h1, h2, h3, h4{
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%;
+    margin-bottom: 2rem;
+}
+h2{font-size: 3.5rem;}
+
+h3{
+    font-size: 2.5rem;
+    font-weight: $regular;
+}
+
+p{
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    font-size: 16px;
+    color: $white;
+    margin-bottom: 2.75rem;
+    opacity: .8;
+}

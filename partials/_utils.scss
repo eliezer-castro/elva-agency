@@ -1,0 +1,62 @@
+@import '_font.scss';
+.container{
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1246px;
+    color: $white;
+}
+
+a{
+    color: $white;
+}
+
+.left{
+    flex: 1;
+    min-width: 280px;
+    max-width: 571px;
+}
+.right{
+    flex: 1;
+    min-width: 280px;
+    max-width: 571px;
+}
+
+.btn-action{
+    padding: 19px 45px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: $dodie-yellow;
+    color: $dark;
+    text-align: center;
+    font-family: $font;
+}
+
+.btn-round{
+    height: 45px;
+    width: 45px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: $dodie-yellow;
+    color: $dark;
+    font-family: $font;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    transition: .2s ease-in-out 100ms;
+    float: right;
+    img{
+        margin: auto;
+        display: block;
+    }
+}
+
+
+.line{
+    display: block;
+    width: 48px;
+    border-top: 1px solid $white; 
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+

@@ -1,0 +1,56 @@
+
+.process{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: $white;
+    .container{
+        color: $dark;
+        display: flex;
+        justify-content: space-between;
+        p{
+            color:$dark;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .left{
+            position: sticky;
+            top: 5%;
+            height: fit-content;
+        }
+        .right{
+            .cards{
+                .card{
+                    width: 100%;
+                    max-width: 615px;
+                    padding: 2rem;
+                    position: sticky;
+                    margin-bottom: 1rem;
+                    color: white;
+
+                    p{
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 400;
+                    }
+                }
+                .card.c1{
+                    top: 10%;
+                    background: $dark;
+                }
+                .card.c2{
+                    top: 12%;
+                    background: $dark-tone;
+                }
+                .card.c3{
+                    top: 14%;
+                    background: $dark-thamar;
+                }
+                .card.c4{
+                    top: 16%;
+                    background: $dark-lead;
+                }
+                
+            }  
+        }
+    }
+}

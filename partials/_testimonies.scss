@@ -1,0 +1,25 @@
+.testimonies{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-color: white;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        color: $dark;
+        p{
+            color: $dark;
+            font-weight: 500;
+        }
+
+        .right{
+            margin-top: 2.5rem;
+        }
+        .testimonie{
+            width: 590px;
+            height: 265px; 
+            padding: 32px 56px;
+            background-color: #F7F5F2;
+            
+        }
+    }
+}
