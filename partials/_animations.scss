@@ -1,76 +1,93 @@
-@keyframes fade-in{
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fade-anime-top {
-    from {
-      opacity: 0;
-      transform: translate3d(0px, -50px, 0px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate3d(0px, 0px, 0px);
-    }
-  }
-  
-  
-  @keyframes alternating-elevation {
-    0% {
-      opacity: 1;
-      transform: translate3d(0px, -50px, 0px);
-    }
-  
-    50% {
-      opacity: 1;
-      transform: translate3d(0px, 0px, 0px);
-    }
-    100%{
-      opacity: 1;
-      transform: translate3d(0px, -50px, 0px);
-    }
-  }
-  
-  @keyframes fade-anime-right {
-    from {
-      opacity: 0;
-      transform: translate3d(0px, 0px, 50px);
-    }
-  
-    to {
-      opacity: 1;
-      transform: translate3d(0px, 0px, 0px);
-    }
-  }
-  
-  [data-anime]{
+@keyframes fade-in {
+  from {
     opacity: 0;
-    transition: .3s;
-  }
-  
-  [data-anime="fade"]{
-    opacity: 1;
-  }
-  
-  [data-anime="top"]{
-    transform: translate3d(-0px, -50px, 0px);
-  }
-  
-  [data-anime="left"]{
-    transform: translate3d(-50px, 0px, 0px);
   }
 
-  [data-anime="right"]{
-    transform: translate3d(50px, 0px, 0px);
+  to {
+    opacity: 1;
   }
-  
-  [data-anime].animate{
+}
+
+@keyframes fade-anime-top {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, -50px, 0px);
+  }
+
+  to {
     opacity: 1;
     transform: translate3d(0px, 0px, 0px);
   }
+}
+
+@keyframes alternating-elevation {
+  0% {
+    opacity: 1;
+    transform: translate3d(0px, -50px, 0px);
+  }
+
+  50% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, -50px, 0px);
+  }
+}
+
+@keyframes fade-anime-right {
+  from {
+    opacity: 0;
+    transform: translate3d(0px, 0px, 50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+
+@keyframes nome {
+  0% {
+      opacity: 0;
+      margin-top: 0;
+  }
+  6% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+  94%{
+    margin-top: 10px;
+    opacity: 1;
+  }
+  100% {
+      opacity: 0;
+  }
+}
+
+[data-anime] {
+  opacity: 0;
+  transition: 0.3s;
+}
+
+[data-anime="fade"] {
+  opacity: 1;
+}
+
+[data-anime="top"] {
+  transform: translate3d(-0px, -50px, 0px);
+}
+
+[data-anime="left"] {
+  transform: translate3d(-50px, 0px, 0px);
+}
+
+[data-anime="right"] {
+  transform: translate3d(50px, 0px, 0px);
+}
+
+[data-anime].animate {
+  opacity: 1;
+  transform: translate3d(0px, 0px, 0px);
+}

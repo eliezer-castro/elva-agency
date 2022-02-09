@@ -1,6 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;500;600;700&display=swap");
+header {
+  /*position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $dark;
+    z-index: 10;*/
+  border: 1px solid #313131;
+}
+
 header .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -12,6 +22,11 @@ header .container {
       -ms-flex-align: center;
           align-items: center;
   height: 5rem;
+}
+
+header .container ul li {
+  display: inline-block;
+  padding: 0 16px;
 }
 
 h1, h2, h3, h4 {
@@ -101,6 +116,7 @@ a {
   background-color: #FFF957;
   color: #0C0C0C;
   text-align: center;
+  border-radius: .4rem;
   font-family: "Epilogue", sans-serif;
 }
 
@@ -138,13 +154,13 @@ a {
 }
 
 .hero {
-  padding: 2rem;
-  -webkit-transition-duration: .1ms;
-          transition-duration: .1ms;
+  padding: 5rem 0;
+  -webkit-transition-duration: 0.1ms;
+          transition-duration: 0.1ms;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
-  -webkit-animation: fade-anime-top .8s;
-          animation: fade-anime-top .8s;
+  -webkit-animation: fade-anime-top 0.8s;
+          animation: fade-anime-top 0.8s;
 }
 
 .hero p {
@@ -161,16 +177,16 @@ a {
 }
 
 .hero .container .right {
-  -webkit-animation: fade-anime-top .8s ease;
-          animation: fade-anime-top .8s ease;
+  -webkit-animation: fade-anime-top 0.8s ease;
+          animation: fade-anime-top 0.8s ease;
 }
 
 .hero .container .right img {
   width: 100%;
   margin: auto;
   display: block;
-  -webkit-transition-duration: .1ms;
-          transition-duration: .1ms;
+  -webkit-transition-duration: 0.1ms;
+          transition-duration: 0.1ms;
   -webkit-transition-timing-function: ease-out;
           transition-timing-function: ease-out;
   -webkit-animation: alternating-elevation 3s ease infinite;
@@ -211,6 +227,22 @@ a {
   margin-right: 16px;
 }
 
+.hero .arrow-down {
+  -webkit-animation: nome 8s infinite linear;
+          animation: nome 8s infinite linear;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 50%;
+}
+
 h1, h2, h3, h4 {
   font-style: normal;
   font-weight: 500;
@@ -272,6 +304,7 @@ a {
   background-color: #FFF957;
   color: #0C0C0C;
   text-align: center;
+  border-radius: .4rem;
   font-family: "Epilogue", sans-serif;
 }
 
@@ -366,7 +399,7 @@ a {
 
 .services .container .right .cards .card:hover p {
   color: #0C0C0C;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .services .container .right .cards .card:hover .btn-round {
@@ -604,10 +637,46 @@ a {
   }
 }
 
+@-webkit-keyframes nome {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  6% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+  94% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes nome {
+  0% {
+    opacity: 0;
+    margin-top: 0;
+  }
+  6% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+  94% {
+    margin-top: 10px;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 [data-anime] {
   opacity: 0;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 [data-anime="fade"] {
@@ -645,6 +714,10 @@ a {
   text-decoration: none;
   list-style: none;
   text-align: left;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {

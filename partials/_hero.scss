@@ -1,49 +1,57 @@
-.hero{
-    padding: 2rem;
-    transition-duration: .1ms;
-    transition-timing-function: ease-out;
-    animation: fade-anime-top .8s ;
-    p{
+.hero {
+  padding: 5rem 0;
+  transition-duration: 0.1ms;
+  transition-timing-function: ease-out;
+  animation: fade-anime-top 0.8s;
+  p {
+    font-size: 16px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    .right {
+      animation: fade-anime-top 0.8s ease;
+      img {
+        width: 100%;
+        margin: auto;
+        display: block;
+        transition-duration: 0.1ms;
+        transition-timing-function: ease-out;
+
+        animation: alternating-elevation 3s ease infinite;
+      }
+    }
+    .social {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      margin-top: 32px;
+      p {
+        margin-bottom: 0;
         font-size: 16px;
-    }
-    .container{
+        margin-right: 16px;
+      }
+      span {
+        display: block;
+        width: 30px;
+        border-top: 1px solid $white;
+        margin-right: 16px;
+      }
+      ul {
         display: flex;
-        justify-content: space-between;
-        .right {
-            animation: fade-anime-top .8s ease;
-            img{
-                width: 100%;
-                margin: auto;
-                display: block;
-                transition-duration: .1ms;
-                transition-timing-function: ease-out;
-               
-                animation: alternating-elevation 3s ease infinite;
-            }
+        li {
+          margin-right: 16px;
         }
-        .social{
-            text-align: center;
-            display: flex; 
-            align-items: center;
-            margin-top: 32px;
-            p{
-                margin-bottom: 0;
-                font-size: 16px;
-                margin-right: 16px;
-            }
-            span{
-               display: block;
-               width: 30px;
-               border-top: 1px solid $white; 
-               margin-right: 16px;
-            }
-            ul{
-                display: flex;
-                li{
-                    margin-right: 16px;
-                }
-            }
-        }
+      }
     }
-    
+  }
+  .arrow-down {
+    animation: nome 8s infinite linear;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+  }
 }
