@@ -3,11 +3,14 @@
 @import '_font.scss';
 @import '_utils.scss';
 @import '_hero.scss';
+@import '_customCursor.scss';
 @import '_services.scss';
 @import '_about.scss';
 @import '_process.scss';
 @import '_testimonies.scss';
 @import '_animations.scss';
+@import '_splash.scss';
+
 
 *{
     margin: 0;
@@ -31,3 +34,5 @@ body{
     font-weight: normal;
     font-family: $font;
 }
+
+
