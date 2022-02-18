@@ -1,0 +1,38 @@
+@import 'components/_colors';
+@import 'components/_header';
+@import 'components/_font';
+@import 'components/_utils';
+@import 'components/_hero';
+@import 'components/_customCursor';
+@import 'components/_services';
+@import 'components/_about';
+@import 'components/_process';
+@import 'components/_testimonies';
+@import 'components/_animations';
+@import 'components/_splash';
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: left;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: $dark;
+    color: $white;
+    font-style: normal;
+    font-weight: normal;
+    font-family: $font;
+}
+
+
