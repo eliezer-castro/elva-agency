@@ -52,8 +52,12 @@
         }
         @include responsive(phone and tab-port){
             flex-direction: column;
+            
             .left{
- 
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+            justify-content: center;
                 p{
                     text-align: center;
                 }
