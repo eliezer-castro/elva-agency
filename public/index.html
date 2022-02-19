@@ -13,21 +13,32 @@
     <div class="splash">
         <h1 class="logo-header">
             <span class="logo">El</span><span class="logo">va</span><br>
-            <span class="logo" style="font-size: 16px;">Design</span><span class="logo" style="font-size: 16px;">&nbsp • &nbsp</span></span><span class="logo" style="font-size: 16px;">Desenvolvimento</span><span class="logo" style="font-size: 16px;">&nbsp • &nbsp</span></span><span class="logo" style="font-size: 16px;">Estratégia</span>
+            <span class="logo" style="font-size: 16px;">Design</span><span class="logo" style="font-size: 16px;">&nbsp •
+                &nbsp</span></span><span class="logo" style="font-size: 16px;">Desenvolvimento</span><span class="logo"
+                style="font-size: 16px;">&nbsp • &nbsp</span></span><span class="logo"
+                style="font-size: 16px;">Estratégia</span>
         </h1>
     </div>
-    <div class="cursor">    
+    <div class="cursor">
     </div>
     <header>
         <div class="container">
-            <a href="#">Elva</a>
-            <ul>
-                <li><a href="#services">Serviços</a></li>
-                <li><a href="">Sobre</a></li>
-                <li><a href="">Projetos</a></li>
-                <li><a href="">Contatos</a></li>
-            </ul>
-            <a href="">Inciar Projeto &nbsp <img src="./assets/arrow-white.svg" alt=""></a>
+            <a class="logo-elva" href="#">Elva</a>
+            <nav id="nav">
+                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu"
+                    aria-expanded="false">MENU
+                    <span id="hamburger"></span>
+                </button>
+                <ul id="menu" role="menu">
+                    <li><a href="/">Serviços</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/">Projetos</a></li>
+                    <li><a href="/">Contato</a></li>
+                    <li></li>
+               
+                </ul>
+               
+            </nav>
         </div>
     </header>
     <section class="hero">
@@ -35,9 +46,9 @@
             <div class="left">
                 <h2 class="sup-title">
                     Somos criadores de produtos digitais e experiências únicas.
-                   
+
                 </h2>
-               
+
                 <p class="text">
                     Somos apaixonados por criar produtos únicos e envolventes, cuidando de cada detalhe para que você
                     possa cuidar apenas do crescimento do seu negócio online e da satisfação dos clientes.
@@ -63,7 +74,7 @@
             <a href="#services"><img src="./assets/chevron.svg" alt=""></a>
         </div>
     </section>
-   
+
     <section class="services" id="services">
         <div class="container">
             <div class="left" data-anime="left">
@@ -239,10 +250,11 @@
             </div>
         </div>
     </section>
-    
+
     <script src="./js/AnimeScroll.js"></script>
     <script src="./js/customCursor.js"></script>
     <script src="./js/splash.js"></script>
+    <script src="./js/menuHamburguer.js"></script>
 </body>
 
 </html>
