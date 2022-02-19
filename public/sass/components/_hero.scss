@@ -13,29 +13,31 @@
   .container {
     display: flex;
     justify-content: space-between;
-    @include xs{
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
     .left{
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-        @include xs{
+      
+      @include responsive(phone){
+          dalign-items: center;
+          justify-content: center;
+          text-align: center;
+         
           h2{
-            font-size: 32px;
             text-align: center;
           }
           p{
             text-align: center;
           }
+          .social{
+            display: flex;
+            justify-content: center;
+          }
         }
       }
     .right {
-      flex: none;
       animation: fade-anime-top 0.8s ease;
-      @include xs {
+      @include responsive(phone){
+        display: none;
+      }
+      @include responsive(tab-port){
         display: none;
       }
       img {
