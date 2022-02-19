@@ -14,8 +14,7 @@
     display: flex;
     justify-content: space-between;
     .left{
-      
-      @include responsive(phone){
+      @include responsive(phone and tab-port){
           dalign-items: center;
           justify-content: center;
           text-align: center;
@@ -35,10 +34,7 @@
       }
     .right {
       animation: fade-anime-top 0.8s ease;
-      @include responsive(phone){
-        display: none;
-      }
-      @include responsive(tab-port){
+      @include responsive(phone and tab-port ){
         display: none;
       }
       img {

@@ -288,7 +288,7 @@ a {
           justify-content: space-between;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .hero .container .left {
     dalign-items: center;
     -webkit-box-pack: center;
@@ -316,12 +316,6 @@ a {
 .hero .container .right {
   -webkit-animation: fade-anime-top 0.8s ease;
           animation: fade-anime-top 0.8s ease;
-}
-
-@media only screen and (max-width: 600px) {
-  .hero .container .right {
-    display: none;
-  }
 }
 
 @media only screen and (max-width: 900px) {
@@ -516,6 +510,24 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+@media only screen and (max-width: 900px) {
+  .services .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services .container .left p {
+    text-align: center;
+  }
+  .services .container .left h3 {
+    text-align: center;
+  }
+  .services .container .right .cards .card {
+    margin-bottom: 30px;
+  }
 }
 
 .services .container .left p {
