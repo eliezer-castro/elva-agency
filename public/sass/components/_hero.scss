@@ -13,7 +13,7 @@
   .container {
     display: flex;
     justify-content: space-between;
-    @include sm{
+    @include xs{
       align-items: center;
       justify-content: center;
       text-align: center;
@@ -22,7 +22,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-        @include sm{
+        @include xs{
           h2{
             font-size: 32px;
             text-align: center;
@@ -35,7 +35,7 @@
     .right {
       flex: none;
       animation: fade-anime-top 0.8s ease;
-      @include sm {
+      @include xs {
         display: none;
       }
       img {
